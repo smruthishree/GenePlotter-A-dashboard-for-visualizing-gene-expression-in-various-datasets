@@ -11,7 +11,7 @@ library(DT)
 
 # Data Import -----------------------------------------------------------------
 
-rnaSeqData <- read.csv2("~/Ikmb/Data/count.csv", sep = ",")
+rnaSeqData <- read.csv2("~/Data/count.csv", sep = ",")
 
 
 # Shiny UI --------------------------------------------------------------------
@@ -127,34 +127,6 @@ server <- function(input, output, session) {
 
 # Run the application ---------------------------------------------------------
 shinyApp(ui = ui, server = server)
-
-
-
-
-
-# output$RNASeq_data <- renderTable({
-#   req(input$filter2)
-#   rnaSeqData %>%
-#     filter(var_name == input$filter2)
-# })
-
-
-# server <- function(input, output, session) {
-#   # Define a reactive expression that filters the data based on the selected gene
-#   filtered_data <- reactive({
-#     rnaSeqData %>% filter(var_name == input$var_name)
-#   })
-#   
-#   # Use observeEvent to listen for changes to the gene selection input
-#   observeEvent(input$filter2
-#                , {
-#                  # Update the data table with the filtered data when the gene selection changes
-#                  output$RNASeq_data <- renderTable({
-#                    filtered_data() #%>% head(20)
-#                  })
-#                })
-# }
-
 
 
 
