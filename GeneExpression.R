@@ -102,7 +102,7 @@ server <- function(input, output, session) {
   },
   content = function(file) {
     
-    write.csv(filteredData(), file,  sep = "\t")
+    write.table(filteredData(), file,  sep = "\t", quote=FALSE, row.names = FALSE)
   }
   )
   
