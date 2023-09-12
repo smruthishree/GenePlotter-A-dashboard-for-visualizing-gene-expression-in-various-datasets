@@ -1,10 +1,19 @@
+GeneBrew: The Expresso Expression Dashboard 🧬☕
+GeneBrew is a Shiny web application that provides an interactive dashboard for exploring gene expression data from different datasets. The application allows users to select genes of interest and visualize their expression patterns across various diagnostic categories. This README provides an overview of the application.
 
-## Dashboard for gene expression visualization.
+The dasboard can be accessed here: https://sys-immunology.shinyapps.io/GeneExpressionDashboard/
 
-gene expression visualization tool built using Shiny in R is a great way to explore your data and share with others.
+Table of Contents
+Introduction
+Features
+Introduction
+GeneBrew is designed to automate the exploration of gene expression data. It offers an intuitive and interactive interface for users to filter and visualize gene expression patterns based on different genes and diagnostic categories. The application supports two datasets from our research: IBD Biopsies RNA-Seq dataset and the Cambridge dataset.
 
-
-![image (1)](https://github.com/smruthishree/visulization-of-gene-expression/assets/74066072/9681397e-559f-4717-930c-d7c81bcb482d)
-
-![image (3)](https://github.com/smruthishree/GenePlotter-A-dashboard-for-visualizing-gene-expression-in-various-datasets/assets/74066072/0e9342f0-260a-4835-8cb8-1ad1d423df82)
-![image (4)](https://github.com/smruthishree/GenePlotter-A-dashboard-for-visualizing-gene-expression-in-various-datasets/assets/74066072/9b6666a4-e080-4972-94ed-f21f0e56afba)
+Features
+Dataset Selection: Choose between the IBD Biopsies RNA-Seq dataset and the Cambridge dataset.
+Gene Selection: Select a gene of interest from the available options.
+Diagnosis Filtering: Filter the data by selecting one or more diagnostic categories. For example: Ctrl, Crohn's disease (CD), Ulcerative colitis (UC).
+Data Table: View the selected gene's expression data in a tabular format.
+Visualization: Visualize gene expression patterns through box plots and point plots.
+Statistical Analysis: View statistical comparisons between diagnostic categories.
+Download: Download selected data, plots, and visualizations.
